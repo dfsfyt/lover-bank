@@ -23,7 +23,7 @@ export default function RootLayout({
         <Sidebar user={loggedIn} />
         <div className="flex size-full flex-col">
           <div className="root-layout">
-            <Image src="icons/logo.svg" alt="menu" width={30} height={30} />
+            <Image src="icons/logo.png" alt="menu" width={30} height={30} />
             <div>
               <MobileNavbar user={loggedIn} />
             </div>

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: "BANK",
   description: "BANK is a modern banking platform for everyone",
   icons: {
-    icon: 'icons/logo.svg'
+    icon: 'icons/logo.png'
   }
 };
 

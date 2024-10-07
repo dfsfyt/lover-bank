@@ -5,6 +5,7 @@ import React, { useState } from "react";
 
 const AuthForm = ({ type }: { type: string }) => {
   const [user, setUser] = useState(null);
+  console.log(setUser);
   return (
     <section className="auth-form">
       <header className="flex flex-col gap-5 md:gap-8">

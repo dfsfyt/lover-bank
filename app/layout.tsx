@@ -22,8 +22,8 @@ const ibmPlexSerif = IBM_Plex_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "DFSFYT BANK",
-  description: "DFSFYT is a modern banking platform for everyone",
+  title: "BANK",
+  description: "BANK is a modern banking platform for everyone",
   icons: {
     icon: '/icons/logo.svg'
   }

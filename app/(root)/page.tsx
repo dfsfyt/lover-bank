@@ -5,7 +5,7 @@ import { NextPage } from 'next'
 import React from 'react'
 
 const Home: NextPage = () => {
-  const loggedIn = { firstName: 'DFSFYT', lastName: 'FAN', email: 'dfsfyt@163.com' };
+  const loggedIn = { firstName: 'LOVER', lastName: 'FAN', email: 'fan@163.com' };
   return (
     <section className='home'>
       <div className='home-content'>

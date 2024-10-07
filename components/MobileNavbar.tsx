@@ -19,7 +19,7 @@ const MobileNavbar = ({ user }: MobileNavProps) => {
       <Sheet>
         <SheetTrigger>
           <Image
-            src="/icons/hamburger.svg"
+            src="icons/hamburger.svg"
             width={30}
             height={30}
             alt="menu"
@@ -31,7 +31,7 @@ const MobileNavbar = ({ user }: MobileNavProps) => {
             href="/"
             className="cursor-pointer items-center gap-1 flex px-4"
           >
-            <Image src="/icons/logo.jpg" width={34} height={34} alt="logo" />
+            <Image src="icons/logo.jpg" width={34} height={34} alt="logo" />
             <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">
               BANK
             </h1>

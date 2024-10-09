@@ -3,10 +3,10 @@
 
 
 const nextConfig = {
-    images: {
-        loader: 'custom',
-        loaderFile: './lib/imgLoader.ts'
-    }
+    // images: {
+    //     loader: 'custom',
+    //     loaderFile: './lib/imgLoader.ts'
+    // }
 };
 
 export default nextConfig;

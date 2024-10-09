@@ -1,28 +1,18 @@
 import HeaderBox from '@/components/HeaderBox'
 import RightSidebar from '@/components/RightSidebar';
 import TotalBalance from '@/components/TotalBalance';
+import { getLoggedInUser } from '@/lib/actions/user.actions';
 import { NextPage } from 'next'
 import React from 'react'
 
-const Home: NextPage = () => {
-  const loggedIn = { 
-    $id: '001',
-    userId: '001',
-    dwollaCustomerUrl: '',
-    dwollaCustomerId: '',
-    address1: '',
-    city: '',
-    state: '',
-    postalCode: '',
-    dateOfBirth: '',
-    ssn: '',
-    firstName: 'FYT', lastName: 'FAN', email: 'fan@163.com' 
-  };
+const Home: NextPage = async () => {
+  const loggedIn = await getLoggedInUser();
+
   return (
     <section className='home'>
       <div className='home-content'>
         <header className='home-header'>
-          <HeaderBox type='greeting' title='Welcome' user={loggedIn.firstName || 'Guest'} subtext='Access and manage your account and transactions efficiently.' />
+          <HeaderBox type='greeting' title='Welcome' user={loggedIn?.name || 'Guest'} subtext='Access and manage your account and transactions efficiently.' />
           <TotalBalance accounts={[]} totalBanks={1} totalCurrentBalance={1250.35} />
         </header>
 

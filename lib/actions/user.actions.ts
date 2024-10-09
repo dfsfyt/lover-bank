@@ -47,6 +47,7 @@ export async function getLoggedInUser() {
     const user = await account.get();
     return parseStringify(user);
   } catch (error) {
+    console.log(error);
     return null;
   }
 }
@@ -57,6 +58,7 @@ export const logoutAccount = async () => {
         cookies().delete('appwrite-session');
         await account.deleteSession('current')
     } catch (error) {
+        console.log(error);
         return null;
     }
 }

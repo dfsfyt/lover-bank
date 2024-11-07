@@ -18,7 +18,7 @@ export async function createSessionClient() {
     get account() {
       return new Account(client);
     },
-    get datebase() {
+    get database() {
         return new Databases(client)
     },
     get user() {
@@ -36,6 +36,9 @@ export async function createAdminClient() {
   return {
     get account() {
       return new Account(client);
+    },
+    get database() {
+        return new Databases(client)
     },
   };
 }

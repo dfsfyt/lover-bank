@@ -7,7 +7,7 @@ import React from 'react'
 
 const Home: NextPage = async () => {
   const loggedIn = await getLoggedInUser();
-
+  console.log("================", loggedIn);
   return (
     <section className='home'>
       <div className='home-content'>
@@ -16,7 +16,7 @@ const Home: NextPage = async () => {
           <TotalBalance accounts={[]} totalBanks={1} totalCurrentBalance={1250.35} />
         </header>
 
-        RECENT TRANSACTIONS
+        
       </div>
 
       <RightSidebar 
